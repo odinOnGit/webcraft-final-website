@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 1rem 2rem;
+  color: white;
+  height: 2em;
+}
+
+.header a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.header a:hover {
+  text-decoration: none;
+  color: #9b9b9b;
+  transition-duration: 1ms;
+}
+
+.toggle-btn {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 0.4rem 0.8rem;
+  margin-left: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
