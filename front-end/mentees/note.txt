@@ -1,0 +1,18 @@
+mentees components here
+
+a file index.jsx must exist and must export App.jsx as default
+
+index should look something like :
+// mentees/Bob/index.jsx
+import App from './App'
+
+export const info = {
+  title: 'Analog Clock',
+  name: 'Bob',
+  description: 'An analog clock built using React and CSS',
+  image: '/assets/analog-clock.png'
+}
+
+export default App
+
+after this is done, user has complete flexibility over file structure

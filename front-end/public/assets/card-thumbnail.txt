@@ -1,0 +1,2 @@
+your card thumbnail to be uploaded here
+format : .png/.jpg/.svg/.jpeg etc

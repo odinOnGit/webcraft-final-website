@@ -1,27 +1,33 @@
-import { useState } from 'react'
-import Card from './Card'
+import { Link } from 'react-router-dom'
 import './CardList.css'
 
-function CardList() {
-  const [cards, setCards] = useState([
-    {id:1},
-    {id:2},
-    {id:3},
-  ])
+const modules = import.meta.glob('../mentees/**/index.jsx', { eager: true })
 
-  const handleAddCard = () => {
-    const newId = cards.length > 0 ? cards[cards.length - 1].id + 1 : 1
-    const newCard = { id: newId }
-    setCards([...cards, newCard])
-  }
+function CardList() {
+  const menteeCards = Object.entries(modules).map(([path, module]) => {
+    const name = path.split('/')[2] // mentee folder name
+    const meta = module.meta || {}
+    return {
+      name,
+      title: meta.title || `${name}'s App`,
+      author: meta.author || name,
+      description: meta.description || '',
+      thumbnail: meta.thumbnail || '', // fallback empty
+    }
+  })
 
   return (
-    <div className='card-list'>
-      <button onClick={handleAddCard}>Add Card</button>
-      {cards.map((card) => (
-        <Card key={card.id} id={card.id} />
-      ))
-      }
+    <div className="card-list">
+      {menteeCards.map(({ name, title, author, description, thumbnail }) => (
+        <Link key={name} to={`/details/${name}`} className="mentee-card">
+          {thumbnail && <img src={thumbnail} alt={`${title} thumbnail`} className="card-thumbnail" />}
+          <div className="card-info">
+            <h3>{title}</h3>
+            <p className="author">by {author}</p>
+            <p className="description">{description}</p>
+          </div>
+        </Link>
+      ))}
     </div>
   )
 }

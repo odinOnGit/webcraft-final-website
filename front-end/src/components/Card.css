@@ -1,11 +1,19 @@
 .card {
-  background: #222;
-  color: #fff;
-  text-decoration: none;
-  padding: 1.5rem;
+  background-color: var(--card-bg);
+  color: var(--text);
+  padding: 20px;
   border-radius: 10px;
-  transition: transform 0.2s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease;
 }
+
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
