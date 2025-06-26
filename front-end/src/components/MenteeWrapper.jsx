@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
 
-const modules = import.meta.glob('../mentees/**/index.jsx', { eager: true })
+const modules = import.meta.glob('../mentees/**/src/index.jsx', { eager: true })
 
 export default function MenteeWrapper() {
   const { name } = useParams()
