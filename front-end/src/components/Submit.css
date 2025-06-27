@@ -1,4 +1,18 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
 .submit-body {
-  font-family: 'Poppins';
+  margin-left: 4em;
+  font-family: Helvetica, sans-serif, sans-serif;
   color: black;
+}
+
+
+
+#main {
+  margin-left: 0;
+  font-weight: 350;
+  padding: 0.5em;
+  color: #314368;
+  font-size: 0.8em;
+  list-style-type: none;
 }

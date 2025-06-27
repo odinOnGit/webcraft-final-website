@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -8,8 +10,9 @@
 
 .mentee-card {
   width: 270px;
-  height: 300px;
+  height: auto;
   border-radius: 16px;
+  border: #D5DCEB 0.5px solid;
   text-decoration: none;
   overflow: hidden;
   background-color: white;
@@ -20,7 +23,7 @@
 }
 
 .mentee-card:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
   height: auto;
   transition-duration: 0.8s;
@@ -32,29 +35,43 @@
   object-fit: cover;
 }
 
+
+
 .card-info {
-  padding: 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.8rem;
   color: black;
+  justify-content: space-between;
 }
 
 .card-info h3 {
+  display: flex;
+  flex-direction: row;
   margin: 0;
+  justify-content: flex-start;
   font-family: 'Poppins';
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
 .card-info .author {
-  font-family: 'Poppins';
-  font-size: 0.9rem;
-  color: #1e40af;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 0.7rem;
+  color: #2D58AE;
   margin-top: 0.2rem;
   font-weight: 500;
 }
 
 .card-info .description {
-  font-family: 'Poppins';
-  font-size: 0.85rem;
-  color: #333;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Satoshi', sans-serif;
+  font-size: 0.6rem;
+  color: #000000;
   margin-top: 0.5rem;
 }

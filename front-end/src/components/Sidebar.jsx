@@ -24,15 +24,15 @@ function Sidebar() {
         </button>
       <nav className="nav-links">
         <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-          <AiFillHome size={18} className='react-logo' />
+          <AiFillHome size={16} className='react-logo' />
           <span className='nav-text'>Home</span>
         </NavLink>
         <NavLink to="/mentor" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
-          <AiOutlineAudit size={18} className='react-logo' />
+          <AiOutlineAudit size={16} className='react-logo' />
           <span className='nav-text'>Mentor</span>
         </NavLink>
         <NavLink to="/submission-guide" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
-          <MdHelpOutline size={18} className='react-logo' />
+          <MdHelpOutline size={16} className='react-logo' />
           <span className='nav-text'>How to Submit?</span>
         </NavLink>
       </nav>

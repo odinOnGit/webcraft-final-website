@@ -17,9 +17,10 @@ body {
 }
 
 .main-content {
+  border-left: #D5DCEB 1px solid;
   margin-left: 220px;
   padding: 2rem;
-  background: linear-gradient(to right, #e6f0ff, #ffffff); /* light gradient */
+  background: linear-gradient(to bottom right, #D5DCEB 0%, #ffffff 50%); /* light gradient */
   min-height: 100vh;
   color: #222;
 }
