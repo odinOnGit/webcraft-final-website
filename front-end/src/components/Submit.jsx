@@ -9,7 +9,7 @@ function Submit() {
 will create a copy under your GitHub account. 
 </li> <br/>
         <li><b>2. Clone Your Fork:</b> <br/>
-          <code>git clone https://github.com/your-username/webcraft-final-website.git
+          <code>git clone https://github.com/your-username/webcraft-final-website.git <br/>
           cd webcraft</code></li> <br/>
           <li><b>3. Create a Folder for Your Project:</b> <br/> Inside the <code>src/mentees/</code> directory, create a new folder using your name or username (e.g., <code>Bob/</code>).
 </li> <br/>

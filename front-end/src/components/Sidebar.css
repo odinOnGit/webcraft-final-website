@@ -1,9 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/satoshi');
+@import '../index.css';
 
 .sidebar {
   width: 190px;
   height: 100vh;
-  background: linear-gradient(to bottom, #DEE4F0 -20%, #ffffff 50%, #DEE4F0 120%);
+  background: var(--sidebar-bg);
   backdrop-filter: blur(12px); /* glass effect */
   box-shadow: 2px 0 10px rgba(0, 0, 0, 0.08);
   padding: 2rem 1.5rem;
@@ -22,7 +23,7 @@
   font-weight: bolder;
   text-align: center;
   font-family: 'Satoshi', sans-serif;
-  color: #1e40af;
+  color: var(--logo);
   margin-bottom: 1rem;
   margin-top: 0;
 }
@@ -35,7 +36,7 @@
 }
 
 .nav-links a {
-  color: rgb(50, 50, 50);
+  color: var(--inactive-nav);
   
   text-decoration: none;
   font-size: 14px;
@@ -45,8 +46,8 @@
 }
 
 .nav-link.active {
-  color: #1e40af;
-  font-weight: 800;
+  color: var(--logo);
+  font-weight: 600;
   margin-left: 0;
 }
 

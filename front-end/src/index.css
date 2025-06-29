@@ -1,11 +1,21 @@
 :root {
-  --bg-color: #ffffff;
+  --bg-color: linear-gradient(to bottom right, #D5DCEB 0%, #ffffff 50%);;
   --text-color: #000000;
+
+  --sidebar-bg: linear-gradient(to bottom, #DEE4F0 -20%, #ffffff 50%, #DEE4F0 120%);
+
+  --logo: #1847A4;
+  --inactive-nav: black;
 }
 
 [data-theme='dark'] {
-  --bg-color: #121212;
+  --bg-color: #1f1f1f;
   --text-color: #f0f0f0;
+
+  --sidebar-bg: #292929;
+
+  --logo: #50c0fb;
+  --inactive-nav: white;
 }
 
 body {
@@ -20,7 +30,7 @@ body {
   border-left: #D5DCEB 1px solid;
   margin-left: 220px;
   padding: 2rem;
-  background: linear-gradient(to bottom right, #D5DCEB 0%, #ffffff 50%); /* light gradient */
+  background: var(--bg-color); /* light gradient */
   min-height: 100vh;
   color: #222;
 }

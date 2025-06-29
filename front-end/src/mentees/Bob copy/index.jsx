@@ -4,7 +4,7 @@ export const meta = {
   title: 'Analog Clock',
   author: 'Bob2',
   description: "A fully functional analog clock built using React, showcasing how time updates dynamically every second.",
-  thumbnail: '/assets/thumbnails/images.jpg'
+  thumbnail: '/assets/thumbnails/image.webp'
 }
 
 export default BobComponent
