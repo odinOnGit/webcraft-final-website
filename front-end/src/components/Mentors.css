@@ -1,5 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/satoshi');
-
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -15,7 +15,7 @@
   border: #D5DCEB 0.5px solid;
   text-decoration: none;
   overflow: hidden;
-  background-color: white;
+  background-color: var(--card);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
@@ -51,9 +51,9 @@
   flex-direction: row;
   margin: 0;
   justify-content: flex-start;
-  font-family: 'Poppins';
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-family: 'Archivo', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
 }
 
 .card-info .author {
@@ -62,7 +62,7 @@
   justify-content: flex-end;
   font-family: 'Satoshi', sans-serif;
   font-size: 0.7rem;
-  color: #2D58AE;
+  color: var(--logo);
   margin-top: 0.2rem;
   font-weight: 500;
 }
@@ -72,6 +72,6 @@
   flex-direction: column;
   font-family: 'Satoshi', sans-serif;
   font-size: 0.6rem;
-  color: #000000;
+  color: var(--text-color);
   margin-top: 0.5rem;
 }

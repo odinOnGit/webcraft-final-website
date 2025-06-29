@@ -1,24 +1,33 @@
 @import url('https://fonts.cdnfonts.com/css/satoshi');
+@import '../index.css';
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+
+h2{
+  margin-left: 3em;
+  font-family: 'Archivo', sans-serif, sans-serif;
+  color: var(--inactive-nav);
+  margin-bottom: 3rem;
+}
 
 .submit-body {
-  margin-left: 4em;
-  font-family: Helvetica, sans-serif, sans-serif;
-  color: black;
+  font-family: 'Archivo', sans-serif, sans-serif;
+  color: var(--inactive-nav);
 }
 
 
 
 #main {
-  margin-left: 0;
-  font-weight: 350;
+  margin-left: 4em;
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 500;
   padding: 0.5em;
-  color: #314368;
+  color: var(--submit-text);
   font-size: 0.8em;
   list-style-type: none;
 }
 
 code {
-  color: #1f1f1f;
+  color: var(--code-color);
   font-weight: 500;
   font-size: 1.2em;
 }

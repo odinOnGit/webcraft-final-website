@@ -17,6 +17,8 @@ function CardList() {
   })
 
   return (
+    <>
+    <h2>Submissions</h2>
     <div className="card-list">
       {menteeCards.map(({ name, title, author, description, thumbnail }) => (
         <Link key={name} to={`/details/${name}`} className="mentee-card">
@@ -29,6 +31,7 @@ function CardList() {
         </Link>
       ))}
     </div>
+    </>
   )
 }
 

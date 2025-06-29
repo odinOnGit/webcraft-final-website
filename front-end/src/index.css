@@ -6,6 +6,9 @@
 
   --logo: #1847A4;
   --inactive-nav: black;
+  --card: white;
+  --submit-text: #314368;
+  --code-color: #1f1f1f;
 }
 
 [data-theme='dark'] {
@@ -14,8 +17,11 @@
 
   --sidebar-bg: #292929;
 
-  --logo: #50c0fb;
-  --inactive-nav: white;
+  --logo: #55C4FF;
+  --inactive-nav: #f0f0f0;
+  --card: var(--sidebar-bg);
+  --submit-text: #a7ddfb;
+  --code-color: #dadada;
 }
 
 body {
@@ -33,4 +39,11 @@ body {
   background: var(--bg-color); /* light gradient */
   min-height: 100vh;
   color: #222;
+}
+
+h2{
+  margin-left: 2.4em;
+  font-family: 'Archivo', sans-serif, sans-serif;
+  color: var(--inactive-nav);
+  margin-bottom: 3rem;
 }

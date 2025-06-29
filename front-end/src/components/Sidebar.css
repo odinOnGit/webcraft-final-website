@@ -1,5 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/satoshi');
 @import '../index.css';
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
 .sidebar {
   width: 190px;
@@ -22,7 +23,7 @@
   font-size: 35px;
   font-weight: bolder;
   text-align: center;
-  font-family: 'Satoshi', sans-serif;
+  font-family: 'Archivo', sans-serif;
   color: var(--logo);
   margin-bottom: 1rem;
   margin-top: 0;
