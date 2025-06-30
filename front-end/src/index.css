@@ -33,17 +33,32 @@ body {
 }
 
 .main-content {
-  border-left: #D5DCEB 1px solid;
-  margin-left: 220px;
+  display: inline-block;
   padding: 2rem;
   background: var(--bg-color); /* light gradient */
   min-height: 100vh;
   color: #222;
+  margin-left: 272px;
 }
 
 h2{
-  margin-left: 2.4em;
+  font-size: 2.8rem;
+  margin-left: 2rem;
   font-family: 'Archivo', sans-serif, sans-serif;
   color: var(--inactive-nav);
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+}
+
+
+@media (max-width: 700px) {
+  .main-content {
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 0.1rem;
+  }
+  h2 {
+    margin-top: 1rem;
+    margin-left: 3.2rem;
+  }
 }

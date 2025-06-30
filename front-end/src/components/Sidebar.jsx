@@ -4,11 +4,26 @@ import './Sidebar.css'
 import { AiFillDashboard, AiFillHome, AiFillSpotify, AiOutlineAudit } from 'react-icons/ai'
 import { MdHelpOutline } from 'react-icons/md'
 import { FiSun, FiMoon } from 'react-icons/fi'
+import { MdOutlineMenu } from "react-icons/md";
+
 
 function Sidebar() {
+
+  const aside = document.querySelector('.sidebar');
+  const root = document.documentElement;
+  
+
   const [darkMode, setDarkMode] = useState(() => {
     return localStorage.getItem('theme') === 'dark'
   })
+
+  const [hamburgerOpen, setHamburgerOpen] = useState(window.innerWidth <= 500 ? false : true);
+
+  const toggleHamburger = () => {
+    setHamburgerOpen(!hamburgerOpen);
+  }
+
+
 
   useEffect(() => {
     const theme = darkMode ? 'dark' : 'light'
@@ -17,26 +32,32 @@ function Sidebar() {
   }, [darkMode])
 
   return (
-    <aside className="sidebar">
+    <>
+    <div className="ham-button" onClick={toggleHamburger}><MdOutlineMenu id="hambutton" size={24}/></div>
+
+    <aside className={hamburgerOpen ? "sidebar" : "sidebar-inactive"} >
+
       <h1 className="logo">WebCraft</h1>
-      <button className="toggle-btn" onClick={() => setDarkMode(prev => !prev)}>
-          {darkMode ? <FiSun size={18} /> : <FiMoon size={18} />}
-        </button>
+      
       <nav className="nav-links">
         <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-          <AiFillHome size={16} className='react-logo' />
+          <AiFillHome className='react-logo' />
           <span className='nav-text'>Home</span>
         </NavLink>
         <NavLink to="/mentor" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
-          <AiOutlineAudit size={16} className='react-logo' />
+          <AiOutlineAudit className='react-logo' />
           <span className='nav-text'>Mentor</span>
         </NavLink>
         <NavLink to="/submission-guide" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
-          <MdHelpOutline size={16} className='react-logo' />
+          <MdHelpOutline className='react-logo' />
           <span className='nav-text'>How to Submit?</span>
         </NavLink>
+        
       </nav>
-    </aside>
+      <button className="toggle-btn" onClick={() => setDarkMode(prev => !prev)}>
+          {darkMode ? <FiSun className='react-logo' color='white'/> : <FiMoon className='react-logo'/>}
+        </button>
+    </aside></>
   )
 }
 

@@ -2,12 +2,7 @@
 @import '../index.css';
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
 
-h2{
-  margin-left: 3em;
-  font-family: 'Archivo', sans-serif, sans-serif;
-  color: var(--inactive-nav);
-  margin-bottom: 3rem;
-}
+
 
 .submit-body {
   font-family: 'Archivo', sans-serif, sans-serif;
@@ -22,12 +17,12 @@ h2{
   font-weight: 500;
   padding: 0.5em;
   color: var(--submit-text);
-  font-size: 0.8em;
+  font-size: 1.2em;
   list-style-type: none;
 }
 
 code {
   color: var(--code-color);
   font-weight: 500;
-  font-size: 1.2em;
+  font-size: 1em;
 }

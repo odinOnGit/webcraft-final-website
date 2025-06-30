@@ -9,7 +9,7 @@ function App() {
   return (
     <Router>
       <Sidebar />
-      <main style={{ marginLeft: '220px', padding: '2rem' }} className="main-content">
+      <main style={{ padding: '2rem' }} className="main-content">
         <Routes>
           <Route path="/" element={<CardList />} />
           <Route path="/details/:name" element={<MenteeWrapper />} />
